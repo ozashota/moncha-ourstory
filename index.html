@@ -20,7 +20,7 @@
   body {
     background: var(--cream);
     font-family: 'Jost', sans-serif;
-    overflow: auto;
+    overflow: hidden;
     height: auto;
     width: 100vw;
   }
@@ -29,7 +29,7 @@
   .carousel {
     position: relative;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     overflow: hidden;
   }
 
@@ -372,6 +372,15 @@
 }
 
 @media (max-width: 767px) {
+ body {
+    overflow: auto;
+    height: auto;
+  }
+
+  .carousel {
+    height: 100dvh;
+  }
+ 
   .slide-photo {
     height: 55%;
   }
