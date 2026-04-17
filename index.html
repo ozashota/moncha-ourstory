@@ -168,14 +168,22 @@
     flex: 0.7;
   }
 
+  @media (min-width: 768px) {
   .slide-cta .slide-text {
-    flex: 1;
+    flex: 0 0 400px;
+    height: 100%;
     background: var(--dark);
-    padding: 28px 24px;
+    padding: 60px 48px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+    .slide-text {
+    min-height: unset;
+  }
+}
 
   .slide-cta .slide-label {
     color: var(--gold);
