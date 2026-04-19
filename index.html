@@ -373,20 +373,25 @@
 }
 
 @media (max-width: 767px) {
- body {
+
+  body {
     overflow: auto;
     height: auto;
+  }
+
+  .hero-img {
+    content: url("images/moncha_box_smartphone.jpg");
   }
 
   .carousel {
     height: 100dvh;
   }
- 
+
   .slide-photo {
     height: 55%;
   }
 
- .slide-label {
+  .slide-label {
     min-height: 16px;
   }
 
@@ -397,7 +402,6 @@
   .slide-body {
     min-height: 90px;
   }
-}
 
   .slide-text {
     height: 45%;
@@ -416,11 +420,12 @@
   .slide-hero .hero-overlay {
     bottom: 60px;
   }
- .slide-cta .slide-text {
+
+  .slide-cta .slide-text {
     background: var(--dark) !important;
-    color: #fff;  
+    color: #fff;
   }
- 
+
 }
  
 </style>
@@ -441,7 +446,7 @@
     <!-- SLIDE 0: HERO -->
     <div class="slide slide-hero">
       <div class="slide-photo">
-        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663533268834/RqNDYUzHiftbMuQX.jpg" alt="Moncha box with furoshiki">
+        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663533268834/RqNDYUzHiftbMuQX.jpg" alt="Moncha box with furoshiki" class="hero-img">
         <div class="hero-overlay">
           <div class="hero-label">How Moncha Started</div>
           <div class="hero-title">The Story<br>of Moncha</div>
