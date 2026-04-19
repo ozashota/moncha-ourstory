@@ -118,20 +118,35 @@
   }
 
   /* ===== HERO SLIDE (slide 0) ===== */
-  .slide-hero .slide-photo {
-    flex: 1;
-  }
+.slide-hero .slide-photo {
+  flex: 1;
+}
 
-  .slide-hero .hero-overlay {
+.slide-hero .hero-overlay {
   position: absolute;
-  top: 30px;      
+  top: 30px;
   left: 0;
   right: 0;
-  bottom: auto;    
-  padding: 32px 24px;
-  );
+  bottom: auto;
+  padding: 32px 24px; 
 
   z-index: 2;
+}
+
+.slide-hero .slide-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6) 0%,
+    rgba(0,0,0,0.25) 40%,
+    rgba(0,0,0,0.35) 100%
+  );
+
+  z-index: 1;
+  pointer-events: none;
 }
 
   .slide-hero .hero-label {
